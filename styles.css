@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+/*body{
+    width: 80%;
+    margin: auto;
+}*/
+
+header{
+    width: 100%;
+    display: flex;
+    height: 220px;
+    background-color: rgb(97, 174, 221);
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.titulo{
+    display: block;
+    font-size: 50px;
+    font-weight: 700;
+ }
+
+.subtitulo{
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.navegador{
+    width: 100%;
+    display: flex;
+    background-color: rgb(63, 60, 60);
+    height: 55px;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+}
+
+.enlaces{
+    display: flex;
+
+}
+ul, li{
+    text-align: center;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5px;
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.alone{
+    position: relative;
+    top: 0%; left: 400%;
+    
+
+}
+
+
+.contenido{
+    width: 75%;
+    margin: auto;
+}
+
+.body{
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 1;
+    
+}
+
+aside{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    justify-content: space-around;
+    flex: 1 1 auto;
+    
+}
+
+.img-left{
+    max-width: 100%;
+    min-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  
+}
+
+main{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: space-around;
+    flex: 2 1 auto;
+
+}
+
+.img-main{
+    max-width: 100%;
+    min-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+}
+
+footer{
+    height: 172px;
+    background-color: rgb(63, 60, 60);
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: space-evenly;
+}
+
+.li-icon{
+    margin: 15px;
+
+}
+
+@media (max-width: 1020px) {
+	.body {
+        flex-direction: column;
+    }
+}
+@media (max-width: 1490px) {
+	.alone{
+        position: relative;
+        top: 0%; left: 0%;
+    }
+}
+
+@media (max-width: 590px) {
+    
+        .contenido{
+            width: 100%;
+            margin: 0;
+
+        }
+
+        footer{
+            flex-direction: column;
+        }
+
+       
+    
+}
